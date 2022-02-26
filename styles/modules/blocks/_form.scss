@@ -1,0 +1,109 @@
+.form {
+  display: flex;
+
+  &__input-email {
+    background-color: rgba(142, 142, 152, 0.2);
+    border-radius: 8px 0px 0px 8px;
+    width: 332px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    transition: background-color .5s ease;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.375px;
+    color: #FFFFFF;
+    padding-left: 16px;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(142, 142, 152, 0.3);
+    }   
+    &:focus {
+      outline-width: 0;
+    }
+    &_not-active {
+      &:hover {
+        background-color: rgba(142, 142, 152, 0.2);
+        cursor: auto;
+      }
+    }
+    @include tablet {
+      width: 411px;
+      &_footer {
+        width: 332px;
+      }
+    }
+    @include mobile-plus {
+      width: 312px;
+    }
+    @include mobile {
+      width: 213px;
+    }
+  }
+
+  &__button-submit {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 2px 0 0 16px;
+    width: 221px;
+    height: 50px;  
+    background-color: #47474C;
+    border-radius: 0px 8px 8px 0px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
+    background-image: url('../images/submit-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 193px 17px;
+    transition: background-color .5s ease;
+    &:hover {
+      background-color: rgba(142, 142, 152, 0.2);
+      cursor: pointer;
+    }
+    &::after {
+      content: 'Отремонтируйте камеру';
+    }
+    @include tablet {
+      padding-left: 17px;
+      background-position: 194px 17px;  
+    }    
+    @include tablet-to-mobile {      
+      background-position: center;
+      &::after {
+        content: '';
+      }
+    }
+    &_click {
+      animation: 2s formButtonSubmitClick;
+      animation-fill-mode: forwards;
+      background-image: none; 
+      &::after {
+        content: 'Круто, спасибо за доверие!';
+      }
+      @include tablet-to-mobile {
+        transition: background-image 2s;
+        background-image: url('../images/smile.svg');
+        background-size: 22px 22px;
+        &::after {
+          content: '';
+        }
+      } 
+    }
+    &_not-active {
+      background-color: rgba(142, 142, 152, 0.2);
+      &:hover {
+        background-color: none;
+        cursor: auto;
+      }
+    }
+    @include mobile {
+      width: 51px;
+    }
+  }  
+}

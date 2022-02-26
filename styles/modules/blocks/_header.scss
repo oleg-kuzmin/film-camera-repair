@@ -1,0 +1,77 @@
+.header {
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 112px;
+    line-height: 100%;
+    margin: 58px 0 0 0;        
+    @include desktop-to-tablet {
+      font-size: calc((100vw / 16) + 22px);	// плавное изменения шрифта с 112 до 70 px
+    }
+    @include tablet {
+      margin-top: 69px;
+      margin-left: 0;      
+      line-height: 129%; // font-size остается 70 по calc
+    }
+    @include tablet-to-mobile {
+      font-size: calc((100vw / 22.4) + 35.71px); // плавное изменения шрифта с 70 до 50 px
+    }
+    @include mobile {
+      margin-top: 60px;      
+      font-size: 50px;
+      line-height: 120%;
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 87%;
+    margin: 20px 0 0 0; 
+    @include desktop-to-tablet {
+      font-size: calc((100vw / 22.4) + 15.71px); // плавное изменения шрифта с 80 до 50 px	
+    }
+    @include tablet {
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 50px;
+      line-height: 120%;
+    }
+    @include tablet-to-mobile {
+      font-size: calc((100vw / 22.35) + 15.68px); // плавное изменения шрифта с 50 до 30 px	
+      line-height: 120%;
+    }
+    @include mobile {
+      margin-top: 10px;
+      font-size: 30px;
+      line-height: 127%;
+    }    
+
+  }
+  &__form {
+    margin-top: 231px;
+    @include tablet {
+      margin-top: 470px;
+    }    
+    @include mobile {
+      margin-top: 260px;
+    }
+  }
+
+  &__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;    
+    color: #47474C;  
+    flex-direction: row;
+    margin: 12px 0 0 10px;
+    @include tablet {
+      margin-top: 10px;
+    }
+    @include mobile {
+      margin: 10px 0 0 0;
+    }
+  }
+}

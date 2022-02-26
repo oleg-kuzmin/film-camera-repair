@@ -1,0 +1,88 @@
+.body {
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: $desktop;
+  background-color: #000000;
+  color: #FFFFFF;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+  &_position_center {
+    margin: 0 auto;
+  }
+
+  &__header {
+    margin-top: 60px;
+    margin-left: 160px;
+    @include desktop {
+      margin: 60px 60px 0;      
+    }
+    @include mobile-plus {
+      margin: 24px 20px 0;      
+    }
+  }
+
+  &__photo {
+    margin: 120px 30px 0; 
+    @include desktop-to-tablet {
+      margin: 52px 60px 0;      
+    }
+    @include mobile-plus {
+      margin: 38px 20px 0;
+    }  
+  }
+
+  &__info {
+    margin: 120px 160px 0;
+    @include desktop-to-tablet {
+      margin: 120px 60px 0;  
+    }
+    @include mobile-plus {
+      margin: 61px 20px 0;  
+    }
+  }
+
+  &__services {
+    margin: 120px 160px 0;
+    @include tablet-plus {
+      margin: 120px 60px 0;
+    }
+    @include mobile-plus {
+      margin: 70px 20px 0;
+    }
+  }
+
+  &__guarantee {
+    margin: 120px 160px 0;
+    @include tablet-plus {
+      margin: 120px 60px 0;
+    }
+    @include mobile-plus {
+      margin: 70px 20px 0;
+    }
+  }
+
+  &__patreon {
+    margin: 120px 160px 0;
+    @include tablet-plus {
+      margin: 120px 60px 0;
+    }
+    @include mobile-plus {
+      margin: 70px 20px 0;
+    }
+  }
+
+  &__footer {
+    margin: 238px 160px 60px;
+    padding-top: 59px;
+    @include tablet-plus {
+      margin: 208px 60px 60px;
+    }
+    @include mobile-plus {
+      padding-top: 30px;
+      margin: 177px 20px 40px;
+    }
+  }
+}

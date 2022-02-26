@@ -1,0 +1,44 @@
+.footer {
+  border-top: 2px solid #151515;
+
+  &__form {
+    margin-top: 84px;
+    @include tablet {
+      margin-top: 83px; //83
+    }
+
+    @include mobile {
+      margin-top: 182px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile-plus {
+      margin-top: 10px;
+    }
+  }
+
+  &__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;    
+    color: #47474C;
+    margin: 0;
+    @include tablet {
+      margin-bottom: 60px;
+    }
+    @include mobile {
+      margin-bottom: 40px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

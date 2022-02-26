@@ -1,0 +1,11 @@
+.services {
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    @include tablet-plus {
+      flex-direction: column;
+    }
+  }
+}

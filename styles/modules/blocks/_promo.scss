@@ -1,0 +1,38 @@
+.promo {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136%;
+    margin: 2px 21px 0 6px;
+    @include tablet {
+      margin-left: 0;
+    }
+    @include mobile {
+      margin-right: 16px;
+      font-size: 20px;
+      line-height: 140%;
+    }
+    &_footer {
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    background: #25E197;
+    border-radius: 4px;
+    width: 99px;
+    height: 20px;
+    color: #000000;
+  }  
+}
