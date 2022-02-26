@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 630px) {
   .body__info {
-    margin: 61px 20px 0;
+    margin: 60px 20px 0;
   }
 }
 .body__services {
@@ -122,7 +122,7 @@
 @media screen and (max-width: 630px) {
   .body__footer {
     padding-top: 30px;
-    margin: 177px 20px 40px;
+    margin: 177px 20px 20px;
   }
 }
 
@@ -219,12 +219,7 @@
 }
 @media screen and (max-width: 630px) {
   .form__input-email {
-    width: 312px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .form__input-email {
-    width: 213px;
+    width: calc(100vw - 107px);
   }
 }
 .form__button-submit {
@@ -236,6 +231,7 @@
   height: 50px;
   background-color: #47474C;
   border-radius: 0px 8px 8px 0px;
+  box-sizing: border-box;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
@@ -262,6 +258,9 @@
 }
 @media screen and (max-width: 767px) {
   .form__button-submit {
+    padding-top: 0px;
+    padding-left: 0;
+    width: 51px;
     background-position: center;
   }
   .form__button-submit::after {
@@ -450,7 +449,7 @@
     margin-top: 470px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .header__form {
     margin-top: 260px;
   }

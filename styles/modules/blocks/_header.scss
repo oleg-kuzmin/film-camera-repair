@@ -54,7 +54,7 @@
     @include tablet {
       margin-top: 470px;
     }    
-    @include mobile {
+    @include tablet-to-mobile {
       margin-top: 260px;
     }
   }

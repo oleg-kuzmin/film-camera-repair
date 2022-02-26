@@ -36,10 +36,7 @@
       }
     }
     @include mobile-plus {
-      width: 312px;
-    }
-    @include mobile {
-      width: 213px;
+      width: calc(100vw - 107px);
     }
   }
 
@@ -52,6 +49,7 @@
     height: 50px;  
     background-color: #47474C;
     border-radius: 0px 8px 8px 0px;
+    box-sizing: border-box;
     color: #FFFFFF;
     font-style: normal;
     font-weight: 400;
@@ -73,7 +71,10 @@
       padding-left: 17px;
       background-position: 194px 17px;  
     }    
-    @include tablet-to-mobile {      
+    @include tablet-to-mobile {
+      padding-top: 0px;
+      padding-left: 0;
+      width: 51px;  
       background-position: center;
       &::after {
         content: '';
