@@ -1,0 +1,84 @@
+.service {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 550px;
+  background-color: #1C1C1E;
+  border-radius: 16px;
+  transition: background-color .5s ease;
+
+  &:hover {
+    background-color: #232327;
+    cursor: pointer;    
+  }
+  @include tablet-plus {
+    width: 100%;
+  }
+
+  &__tag {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #8E8E98; 
+    margin: 0;
+    padding: 40px 0 0 40px;
+    @include mobile-plus {
+      padding: 20px 0 0 20px; 
+    } 
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF;  
+    margin: 0; 
+    padding: 20px 0 0 40px;
+    @include mobile-plus {
+      font-size: 24px;
+      line-height: 133%;
+      color: #FFFFFF;
+      padding: 10px 0 0 20px;  
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #8E8E98;
+    margin: 0;
+    padding: 40px 40px 0 40px;
+    @include desktop-to-tablet {
+      padding: 40px 0 0 40px;
+    }
+    @include tablet {
+      padding: 40px 40px 0 40px;
+    }  
+
+
+    @include mobile-plus {
+      font-size: 12px;
+      line-height: 150%;
+      padding: 28px 20px 0 20px;
+    } 
+  }
+  
+  &__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;    
+    color: #25E197; 
+    margin: 0;
+    padding: 40px 0 40px 40px; 
+    @include mobile-plus {
+      font-size: 12px;
+      line-height: 150%;
+      padding: 100px 0 20px 20px;
+    }   
+  }
+}
