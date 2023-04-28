@@ -1,27 +1,15 @@
-# Проект: Film camera repair (landing)
+# Learning project: film camera repair (Landing, adaptive rubber layout)
+Adaptive for screen resolution: 320px/ 768px/ 1440px
 
-### Обзор
-* Интро
-* Технологии
-* Figma
-* Github
+### technologies
+* html semantic structure
+* external fonts
+* name of classes by BEM nested
+* folder and file structure by BEM nested
+* flex
+* scss
+* little magic of js
 
-**Интро**
+**project checked by code reviewer**
 
-Небольшой сайт Film camera repair (landing) с формой для отправки почты
-
-**Технологии**
-* адаптивная верстка под разрешения: 1280 / 768 / 320
-* используется grid
-* используется flex
-* используется bem
-* используется scss
-* используется js
-
-**Figma**
-
-* [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=2%3A3)
-
-**Github**
-
-* [Ссылка на Github](https://alex-dust.github.io/film-camera-repair/)
+* [Link to Github Pages](https://oleg-kuzmin.github.io/film-camera-repair)
