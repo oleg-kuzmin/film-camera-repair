@@ -1,6 +1,10 @@
-# Film Camera Repair (Лендинг)
+# Film Camera Repair
 
-Сайт-лендинг по ремонту фотоаппаратов.
+Сайт-лэндинг по ремонту фотоаппаратов.
+
+## Функционал
+
+- Ввод почты и отправка формы.
 
 ## Технологии
 
@@ -12,4 +16,4 @@
 
 ## Ссылки
 
-- [Github Pages](https://oleg-kuzmin.github.io/film-camera-repair/)
+- [Github Pages](https://oleg-kuzmin.github.io/film-camera-repair)
